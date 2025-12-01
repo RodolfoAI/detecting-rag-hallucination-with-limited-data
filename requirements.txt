@@ -1,0 +1,8 @@
+transformers==4.57.3
+torch==2.9.1
+bitsandbytes
+accelerate
+peft
+datasets
+scikit-learn
+setfit
