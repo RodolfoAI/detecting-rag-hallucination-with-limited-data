@@ -1,0 +1,231 @@
+--- Training with 2 Samples ---
+config.json: 100%
+ 613/613 [00:00<00:00, 82.5kB/s]
+modules.json: 100%
+ 349/349 [00:00<00:00, 47.7kB/s]
+config_sentence_transformers.json: 100%
+ 201/201 [00:00<00:00, 28.6kB/s]
+README.md: 
+ 18.8k/? [00:00<00:00, 2.23MB/s]
+sentence_bert_config.json: 100%
+ 53.0/53.0 [00:00<00:00, 6.29kB/s]
+model.safetensors: 100%
+ 438M/438M [00:10<00:00, 164MB/s]
+tokenizer_config.json: 
+ 1.58k/? [00:00<00:00, 203kB/s]
+vocab.txt: 
+ 232k/? [00:00<00:00, 22.5MB/s]
+tokenizer.json: 
+ 711k/? [00:00<00:00, 55.2MB/s]
+special_tokens_map.json: 100%
+ 964/964 [00:00<00:00, 127kB/s]
+config.json: 100%
+ 296/296 [00:00<00:00, 44.3kB/s]
+model_head.pkl not found on HuggingFace Hub, initialising classification head with random weights. You should TRAIN this model on a downstream task to use it for predictions and inference.
+Applying column mapping to the training dataset
+/tmp/ipython-input-3268729565.py:73: DeprecationWarning: `Trainer.unfreeze` is deprecated and will be removed in v2.0.0 of SetFit. Please use `SetFitModel.unfreeze` directly instead.
+  trainer.unfreeze(keep_body_frozen=False)
+/usr/local/lib/python3.12/dist-packages/google/protobuf/internal/well_known_types.py:178: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  self.FromDatetime(datetime.datetime.utcnow())
+/usr/local/lib/python3.12/dist-packages/setfit/trainer.py:490: DeprecationWarning: `keep_body_frozen` is deprecated and will be removed in v2.0.0 of SetFit. Please either pass "head", "body" or no arguments to unfreeze both.
+  return self.model.unfreeze(component, keep_body_frozen=keep_body_frozen)
+***** Running training *****
+/usr/local/lib/python3.12/dist-packages/jupyter_client/session.py:203: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  return datetime.utcnow().replace(tzinfo=utc)
+  Num unique pairs = 8
+  Batch size = 32
+  Num epochs = 1
+/usr/local/lib/python3.12/dist-packages/torch/utils/data/_utils/pin_memory.py:57: DeprecationWarning: The argument 'device' of Tensor.pin_memory() is deprecated. Please do not pass this argument. (Triggered internally at /pytorch/aten/src/ATen/native/Memory.cpp:46.)
+  return data.pin_memory(device)
+/usr/local/lib/python3.12/dist-packages/torch/utils/data/_utils/pin_memory.py:57: DeprecationWarning: The argument 'device' of Tensor.is_pinned() is deprecated. Please do not pass this argument. (Triggered internally at /pytorch/aten/src/ATen/native/Memory.cpp:31.)
+  return data.pin_memory(device)
+ [1/1 00:02, Epoch 1/1]
+Step	Training Loss
+1	0.027700
+/usr/local/lib/python3.12/dist-packages/jupyter_client/session.py:203: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  return datetime.utcnow().replace(tzinfo=utc)
+/usr/local/lib/python3.12/dist-packages/google/protobuf/internal/well_known_types.py:178: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  self.FromDatetime(datetime.datetime.utcnow())
+The `max_length` is `None`. Using the maximum acceptable length according to the current model body: 384.
+Epoch: 100%
+ 1/1 [00:00<00:00, 11.92it/s]
+/usr/local/lib/python3.12/dist-packages/torch/utils/data/_utils/pin_memory.py:57: DeprecationWarning: The argument 'device' of Tensor.pin_memory() is deprecated. Please do not pass this argument. (Triggered internally at /pytorch/aten/src/ATen/native/Memory.cpp:46.)
+  return data.pin_memory(device)
+/usr/local/lib/python3.12/dist-packages/torch/utils/data/_utils/pin_memory.py:57: DeprecationWarning: The argument 'device' of Tensor.is_pinned() is deprecated. Please do not pass this argument. (Triggered internally at /pytorch/aten/src/ATen/native/Memory.cpp:31.)
+  return data.pin_memory(device)
+Evaluation Metrics after 2 samples: {'accuracy': 0.6301775147928994, 'precision_macro': 0.6356686735997081, 'recall_macro': 0.6301775147928994, 'f1_macro': 0.62639714204867}
+
+--- Training with 3 Samples ---
+/usr/local/lib/python3.12/dist-packages/google/protobuf/internal/well_known_types.py:178: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  self.FromDatetime(datetime.datetime.utcnow())
+/usr/local/lib/python3.12/dist-packages/jupyter_client/session.py:203: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  return datetime.utcnow().replace(tzinfo=utc)
+model_head.pkl not found on HuggingFace Hub, initialising classification head with random weights. You should TRAIN this model on a downstream task to use it for predictions and inference.
+Applying column mapping to the training dataset
+/tmp/ipython-input-3268729565.py:73: DeprecationWarning: `Trainer.unfreeze` is deprecated and will be removed in v2.0.0 of SetFit. Please use `SetFitModel.unfreeze` directly instead.
+  trainer.unfreeze(keep_body_frozen=False)
+/usr/local/lib/python3.12/dist-packages/google/protobuf/internal/well_known_types.py:178: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  self.FromDatetime(datetime.datetime.utcnow())
+/usr/local/lib/python3.12/dist-packages/setfit/trainer.py:490: DeprecationWarning: `keep_body_frozen` is deprecated and will be removed in v2.0.0 of SetFit. Please either pass "head", "body" or no arguments to unfreeze both.
+  return self.model.unfreeze(component, keep_body_frozen=keep_body_frozen)
+***** Running training *****
+/usr/local/lib/python3.12/dist-packages/jupyter_client/session.py:203: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  return datetime.utcnow().replace(tzinfo=utc)
+  Num unique pairs = 12
+  Batch size = 32
+  Num epochs = 1
+/usr/local/lib/python3.12/dist-packages/torch/utils/data/_utils/pin_memory.py:57: DeprecationWarning: The argument 'device' of Tensor.pin_memory() is deprecated. Please do not pass this argument. (Triggered internally at /pytorch/aten/src/ATen/native/Memory.cpp:46.)
+  return data.pin_memory(device)
+/usr/local/lib/python3.12/dist-packages/torch/utils/data/_utils/pin_memory.py:57: DeprecationWarning: The argument 'device' of Tensor.is_pinned() is deprecated. Please do not pass this argument. (Triggered internally at /pytorch/aten/src/ATen/native/Memory.cpp:31.)
+  return data.pin_memory(device)
+ [1/1 00:02, Epoch 1/1]
+Step	Training Loss
+1	0.071300
+/usr/local/lib/python3.12/dist-packages/jupyter_client/session.py:203: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  return datetime.utcnow().replace(tzinfo=utc)
+/usr/local/lib/python3.12/dist-packages/google/protobuf/internal/well_known_types.py:178: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  self.FromDatetime(datetime.datetime.utcnow())
+The `max_length` is `None`. Using the maximum acceptable length according to the current model body: 384.
+Epoch: 100%
+ 1/1 [00:00<00:00, 12.50it/s]
+/usr/local/lib/python3.12/dist-packages/torch/utils/data/_utils/pin_memory.py:57: DeprecationWarning: The argument 'device' of Tensor.pin_memory() is deprecated. Please do not pass this argument. (Triggered internally at /pytorch/aten/src/ATen/native/Memory.cpp:46.)
+  return data.pin_memory(device)
+/usr/local/lib/python3.12/dist-packages/torch/utils/data/_utils/pin_memory.py:57: DeprecationWarning: The argument 'device' of Tensor.is_pinned() is deprecated. Please do not pass this argument. (Triggered internally at /pytorch/aten/src/ATen/native/Memory.cpp:31.)
+  return data.pin_memory(device)
+Evaluation Metrics after 3 samples: {'accuracy': 0.665680473372781, 'precision_macro': 0.665680473372781, 'recall_macro': 0.665680473372781, 'f1_macro': 0.665680473372781}
+
+--- Training with 5 Samples ---
+/usr/local/lib/python3.12/dist-packages/google/protobuf/internal/well_known_types.py:178: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  self.FromDatetime(datetime.datetime.utcnow())
+/usr/local/lib/python3.12/dist-packages/jupyter_client/session.py:203: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  return datetime.utcnow().replace(tzinfo=utc)
+model_head.pkl not found on HuggingFace Hub, initialising classification head with random weights. You should TRAIN this model on a downstream task to use it for predictions and inference.
+Applying column mapping to the training dataset
+/tmp/ipython-input-3268729565.py:73: DeprecationWarning: `Trainer.unfreeze` is deprecated and will be removed in v2.0.0 of SetFit. Please use `SetFitModel.unfreeze` directly instead.
+  trainer.unfreeze(keep_body_frozen=False)
+/usr/local/lib/python3.12/dist-packages/google/protobuf/internal/well_known_types.py:178: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  self.FromDatetime(datetime.datetime.utcnow())
+/usr/local/lib/python3.12/dist-packages/setfit/trainer.py:490: DeprecationWarning: `keep_body_frozen` is deprecated and will be removed in v2.0.0 of SetFit. Please either pass "head", "body" or no arguments to unfreeze both.
+  return self.model.unfreeze(component, keep_body_frozen=keep_body_frozen)
+***** Running training *****
+/usr/local/lib/python3.12/dist-packages/jupyter_client/session.py:203: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  return datetime.utcnow().replace(tzinfo=utc)
+  Num unique pairs = 20
+  Batch size = 32
+  Num epochs = 1
+/usr/local/lib/python3.12/dist-packages/torch/utils/data/_utils/pin_memory.py:57: DeprecationWarning: The argument 'device' of Tensor.pin_memory() is deprecated. Please do not pass this argument. (Triggered internally at /pytorch/aten/src/ATen/native/Memory.cpp:46.)
+  return data.pin_memory(device)
+/usr/local/lib/python3.12/dist-packages/torch/utils/data/_utils/pin_memory.py:57: DeprecationWarning: The argument 'device' of Tensor.is_pinned() is deprecated. Please do not pass this argument. (Triggered internally at /pytorch/aten/src/ATen/native/Memory.cpp:31.)
+  return data.pin_memory(device)
+ [1/1 00:01, Epoch 1/1]
+Step	Training Loss
+1	0.149300
+/usr/local/lib/python3.12/dist-packages/jupyter_client/session.py:203: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  return datetime.utcnow().replace(tzinfo=utc)
+/usr/local/lib/python3.12/dist-packages/google/protobuf/internal/well_known_types.py:178: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  self.FromDatetime(datetime.datetime.utcnow())
+The `max_length` is `None`. Using the maximum acceptable length according to the current model body: 384.
+Epoch: 100%
+ 1/1 [00:00<00:00, 12.19it/s]
+/usr/local/lib/python3.12/dist-packages/torch/utils/data/_utils/pin_memory.py:57: DeprecationWarning: The argument 'device' of Tensor.pin_memory() is deprecated. Please do not pass this argument. (Triggered internally at /pytorch/aten/src/ATen/native/Memory.cpp:46.)
+  return data.pin_memory(device)
+/usr/local/lib/python3.12/dist-packages/torch/utils/data/_utils/pin_memory.py:57: DeprecationWarning: The argument 'device' of Tensor.is_pinned() is deprecated. Please do not pass this argument. (Triggered internally at /pytorch/aten/src/ATen/native/Memory.cpp:31.)
+  return data.pin_memory(device)
+Evaluation Metrics after 5 samples: {'accuracy': 0.636094674556213, 'precision_macro': 0.6393939393939394, 'recall_macro': 0.636094674556213, 'f1_macro': 0.6339285714285714}
+
+--- Training with 10 Samples ---
+/usr/local/lib/python3.12/dist-packages/google/protobuf/internal/well_known_types.py:178: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  self.FromDatetime(datetime.datetime.utcnow())
+/usr/local/lib/python3.12/dist-packages/jupyter_client/session.py:203: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  return datetime.utcnow().replace(tzinfo=utc)
+model_head.pkl not found on HuggingFace Hub, initialising classification head with random weights. You should TRAIN this model on a downstream task to use it for predictions and inference.
+Applying column mapping to the training dataset
+/tmp/ipython-input-3268729565.py:73: DeprecationWarning: `Trainer.unfreeze` is deprecated and will be removed in v2.0.0 of SetFit. Please use `SetFitModel.unfreeze` directly instead.
+  trainer.unfreeze(keep_body_frozen=False)
+/usr/local/lib/python3.12/dist-packages/google/protobuf/internal/well_known_types.py:178: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  self.FromDatetime(datetime.datetime.utcnow())
+/usr/local/lib/python3.12/dist-packages/setfit/trainer.py:490: DeprecationWarning: `keep_body_frozen` is deprecated and will be removed in v2.0.0 of SetFit. Please either pass "head", "body" or no arguments to unfreeze both.
+  return self.model.unfreeze(component, keep_body_frozen=keep_body_frozen)
+***** Running training *****
+/usr/local/lib/python3.12/dist-packages/jupyter_client/session.py:203: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  return datetime.utcnow().replace(tzinfo=utc)
+  Num unique pairs = 40
+  Batch size = 32
+  Num epochs = 1
+/usr/local/lib/python3.12/dist-packages/torch/utils/data/_utils/pin_memory.py:57: DeprecationWarning: The argument 'device' of Tensor.pin_memory() is deprecated. Please do not pass this argument. (Triggered internally at /pytorch/aten/src/ATen/native/Memory.cpp:46.)
+  return data.pin_memory(device)
+/usr/local/lib/python3.12/dist-packages/torch/utils/data/_utils/pin_memory.py:57: DeprecationWarning: The argument 'device' of Tensor.is_pinned() is deprecated. Please do not pass this argument. (Triggered internally at /pytorch/aten/src/ATen/native/Memory.cpp:31.)
+  return data.pin_memory(device)
+ [2/2 00:02, Epoch 1/1]
+Step	Training Loss
+1	0.207400
+2	0.275400
+/usr/local/lib/python3.12/dist-packages/jupyter_client/session.py:203: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  return datetime.utcnow().replace(tzinfo=utc)
+/usr/local/lib/python3.12/dist-packages/google/protobuf/internal/well_known_types.py:178: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  self.FromDatetime(datetime.datetime.utcnow())
+The `max_length` is `None`. Using the maximum acceptable length according to the current model body: 384.
+Epoch: 100%
+ 1/1 [00:00<00:00,  7.30it/s]
+/usr/local/lib/python3.12/dist-packages/torch/utils/data/_utils/pin_memory.py:57: DeprecationWarning: The argument 'device' of Tensor.pin_memory() is deprecated. Please do not pass this argument. (Triggered internally at /pytorch/aten/src/ATen/native/Memory.cpp:46.)
+  return data.pin_memory(device)
+/usr/local/lib/python3.12/dist-packages/torch/utils/data/_utils/pin_memory.py:57: DeprecationWarning: The argument 'device' of Tensor.is_pinned() is deprecated. Please do not pass this argument. (Triggered internally at /pytorch/aten/src/ATen/native/Memory.cpp:31.)
+  return data.pin_memory(device)
+Evaluation Metrics after 10 samples: {'accuracy': 0.628698224852071, 'precision_macro': 0.6577253564187558, 'recall_macro': 0.6286982248520709, 'f1_macro': 0.6107911210204816}
+
+--- Training with 20 Samples ---
+/usr/local/lib/python3.12/dist-packages/google/protobuf/internal/well_known_types.py:178: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  self.FromDatetime(datetime.datetime.utcnow())
+/usr/local/lib/python3.12/dist-packages/jupyter_client/session.py:203: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  return datetime.utcnow().replace(tzinfo=utc)
+model_head.pkl not found on HuggingFace Hub, initialising classification head with random weights. You should TRAIN this model on a downstream task to use it for predictions and inference.
+Applying column mapping to the training dataset
+/tmp/ipython-input-3268729565.py:73: DeprecationWarning: `Trainer.unfreeze` is deprecated and will be removed in v2.0.0 of SetFit. Please use `SetFitModel.unfreeze` directly instead.
+  trainer.unfreeze(keep_body_frozen=False)
+/usr/local/lib/python3.12/dist-packages/google/protobuf/internal/well_known_types.py:178: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  self.FromDatetime(datetime.datetime.utcnow())
+/usr/local/lib/python3.12/dist-packages/setfit/trainer.py:490: DeprecationWarning: `keep_body_frozen` is deprecated and will be removed in v2.0.0 of SetFit. Please either pass "head", "body" or no arguments to unfreeze both.
+  return self.model.unfreeze(component, keep_body_frozen=keep_body_frozen)
+***** Running training *****
+/usr/local/lib/python3.12/dist-packages/jupyter_client/session.py:203: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  return datetime.utcnow().replace(tzinfo=utc)
+  Num unique pairs = 80
+  Batch size = 32
+  Num epochs = 1
+/usr/local/lib/python3.12/dist-packages/torch/utils/data/_utils/pin_memory.py:57: DeprecationWarning: The argument 'device' of Tensor.pin_memory() is deprecated. Please do not pass this argument. (Triggered internally at /pytorch/aten/src/ATen/native/Memory.cpp:46.)
+  return data.pin_memory(device)
+/usr/local/lib/python3.12/dist-packages/torch/utils/data/_utils/pin_memory.py:57: DeprecationWarning: The argument 'device' of Tensor.is_pinned() is deprecated. Please do not pass this argument. (Triggered internally at /pytorch/aten/src/ATen/native/Memory.cpp:31.)
+  return data.pin_memory(device)
+ [3/3 00:03, Epoch 1/1]
+Step	Training Loss
+1	0.339400
+2	0.286500
+3	0.328200
+/usr/local/lib/python3.12/dist-packages/jupyter_client/session.py:203: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  return datetime.utcnow().replace(tzinfo=utc)
+/usr/local/lib/python3.12/dist-packages/google/protobuf/internal/well_known_types.py:178: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  self.FromDatetime(datetime.datetime.utcnow())
+The `max_length` is `None`. Using the maximum acceptable length according to the current model body: 384.
+Epoch: 100%
+ 1/1 [00:00<00:00,  4.06it/s]
+/usr/local/lib/python3.12/dist-packages/torch/utils/data/_utils/pin_memory.py:57: DeprecationWarning: The argument 'device' of Tensor.pin_memory() is deprecated. Please do not pass this argument. (Triggered internally at /pytorch/aten/src/ATen/native/Memory.cpp:46.)
+  return data.pin_memory(device)
+/usr/local/lib/python3.12/dist-packages/torch/utils/data/_utils/pin_memory.py:57: DeprecationWarning: The argument 'device' of Tensor.is_pinned() is deprecated. Please do not pass this argument. (Triggered internally at /pytorch/aten/src/ATen/native/Memory.cpp:31.)
+  return data.pin_memory(device)
+Evaluation Metrics after 20 samples: {'accuracy': 0.599112426035503, 'precision_macro': 0.6321499013806706, 'recall_macro': 0.599112426035503, 'f1_macro': 0.5723865877712031}
+
+================================================================================
+All Results Summary:
+| Samples | Accuracy | Macro Precision | Macro Recall | Macro F1-Score |
+|---------|----------|-----------------|--------------|----------------|
+| 2       |  0.6302  |     0.6357      |    0.6302    |     0.6264     |
+| 3       |  0.6657  |     0.6657      |    0.6657    |     0.6657     |
+| 5       |  0.6361  |     0.6394      |    0.6361    |     0.6339     |
+| 10      |  0.6287  |     0.6577      |    0.6287    |     0.6108     |
+| 20      |  0.5991  |     0.6321      |    0.5991    |     0.5724     |
+
+🧠 Peak Memory Usage (Last Run): 27.00 GB
+/usr/local/lib/python3.12/dist-packages/google/protobuf/internal/well_known_types.py:178: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  self.FromDatetime(datetime.datetime.utcnow())
+/usr/local/lib/python3.12/dist-packages/jupyter_client/session.py:203: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  return datetime.utcnow().replace(tzinfo=utc)
